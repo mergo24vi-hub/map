@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be0720d7135242a7441cd6cbd7e1b8d3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_be0720d7135242a7441cd6cbd7e1b8d3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_be0720d7135242a7441cd6cbd7e1b8d3 = L.map(
+                "map_be0720d7135242a7441cd6cbd7e1b8d3",
+                {
+                    center: [50.4501, 30.5234],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e445f3d0dca52236ef120a735ede91a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var marker_34b757bf7aaf8d85bec7e061a88b7803 = L.marker(
+                [50.4656, 30.5149],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_dc07b852c237de8cbf43aafc2eeecda2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_34b757bf7aaf8d85bec7e061a88b7803.setIcon(icon_dc07b852c237de8cbf43aafc2eeecda2);
+        
+    
+        var popup_7d79c24b1ede1c64fa801f305db5c58d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7a4bbfb4e08ef47cea1e8e077a40f65 = $(`<div id="html_f7a4bbfb4e08ef47cea1e8e077a40f65" style="width: 100.0%; height: 100.0%;">Raices Dance Studio<br>Верхній Вал 16/4, Поділ</div>`)[0];
+            popup_7d79c24b1ede1c64fa801f305db5c58d.setContent(html_f7a4bbfb4e08ef47cea1e8e077a40f65);
+        
+
+        marker_34b757bf7aaf8d85bec7e061a88b7803.bindPopup(popup_7d79c24b1ede1c64fa801f305db5c58d)
+        ;
+
+        
+    
+    
+            marker_34b757bf7aaf8d85bec7e061a88b7803.bindTooltip(
+                `<div>
+                     Raices Dance Studio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f93c7de1a5414c4018d2e6652d7c37b = L.marker(
+                [50.4442, 30.5176],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_32f02488131990b00d0d98b3f4f40508 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8f93c7de1a5414c4018d2e6652d7c37b.setIcon(icon_32f02488131990b00d0d98b3f4f40508);
+        
+    
+        var popup_63d5074eec05586a64c6710fed8596e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f97cd62cb0ec65d1db18a0917ae680e = $(`<div id="html_3f97cd62cb0ec65d1db18a0917ae680e" style="width: 100.0%; height: 100.0%;">LagoFamily (Театральна)<br>Терещенківська 13</div>`)[0];
+            popup_63d5074eec05586a64c6710fed8596e4.setContent(html_3f97cd62cb0ec65d1db18a0917ae680e);
+        
+
+        marker_8f93c7de1a5414c4018d2e6652d7c37b.bindPopup(popup_63d5074eec05586a64c6710fed8596e4)
+        ;
+
+        
+    
+    
+            marker_8f93c7de1a5414c4018d2e6652d7c37b.bindTooltip(
+                `<div>
+                     LagoFamily (Театральна)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c769173ec4349e387f5a27af47a1e0b = L.marker(
+                [50.4518, 30.5993],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_9698872b76e47247ddac6d119622cdba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6c769173ec4349e387f5a27af47a1e0b.setIcon(icon_9698872b76e47247ddac6d119622cdba);
+        
+    
+        var popup_559f560894323da13fa3d52131384b98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_beb3e9bc1d51b5592616e7e22545a689 = $(`<div id="html_beb3e9bc1d51b5592616e7e22545a689" style="width: 100.0%; height: 100.0%;">LagoFamily (Лівобережна)<br>Микільсько-Слобідська 1А</div>`)[0];
+            popup_559f560894323da13fa3d52131384b98.setContent(html_beb3e9bc1d51b5592616e7e22545a689);
+        
+
+        marker_6c769173ec4349e387f5a27af47a1e0b.bindPopup(popup_559f560894323da13fa3d52131384b98)
+        ;
+
+        
+    
+    
+            marker_6c769173ec4349e387f5a27af47a1e0b.bindTooltip(
+                `<div>
+                     LagoFamily (Лівобережна)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5396fd123af2d4044403ecc3264b9af6 = L.marker(
+                [50.3977, 30.6325],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_11cc0c4fee372bedc2db6632360c3fac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5396fd123af2d4044403ecc3264b9af6.setIcon(icon_11cc0c4fee372bedc2db6632360c3fac);
+        
+    
+        var popup_2a5036c0476d37a5f3d44d83773846c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6df16803dfeb9d68f1e3a89c87accef8 = $(`<div id="html_6df16803dfeb9d68f1e3a89c87accef8" style="width: 100.0%; height: 100.0%;">LagoFamily (Позняки)<br>Драгоманова 31В</div>`)[0];
+            popup_2a5036c0476d37a5f3d44d83773846c0.setContent(html_6df16803dfeb9d68f1e3a89c87accef8);
+        
+
+        marker_5396fd123af2d4044403ecc3264b9af6.bindPopup(popup_2a5036c0476d37a5f3d44d83773846c0)
+        ;
+
+        
+    
+    
+            marker_5396fd123af2d4044403ecc3264b9af6.bindTooltip(
+                `<div>
+                     LagoFamily (Позняки)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_675ac941e44e8e44f4f1a257968bfed3 = L.marker(
+                [50.5105, 30.4985],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_65141c9ab84611119d4b931623767016 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_675ac941e44e8e44f4f1a257968bfed3.setIcon(icon_65141c9ab84611119d4b931623767016);
+        
+    
+        var popup_461e9daab29602989276e2f2d18923f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68de74977e2370fdb63c709a710b57f6 = $(`<div id="html_68de74977e2370fdb63c709a710b57f6" style="width: 100.0%; height: 100.0%;">LagoFamily (Мінська)<br>Оболонський просп. 32Б</div>`)[0];
+            popup_461e9daab29602989276e2f2d18923f8.setContent(html_68de74977e2370fdb63c709a710b57f6);
+        
+
+        marker_675ac941e44e8e44f4f1a257968bfed3.bindPopup(popup_461e9daab29602989276e2f2d18923f8)
+        ;
+
+        
+    
+    
+            marker_675ac941e44e8e44f4f1a257968bfed3.bindTooltip(
+                `<div>
+                     LagoFamily (Мінська)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48d0b918570677cb6479faa91e6f2e0a = L.marker(
+                [50.4546, 30.4456],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_fb9d0df9c9c6fa29fb8e0e55960aec4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_48d0b918570677cb6479faa91e6f2e0a.setIcon(icon_fb9d0df9c9c6fa29fb8e0e55960aec4d);
+        
+    
+        var popup_4386aa7de0605458c84e3d1ea3f19697 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52113195a3c06c1fc9ea71c2dbaee53f = $(`<div id="html_52113195a3c06c1fc9ea71c2dbaee53f" style="width: 100.0%; height: 100.0%;">LagoFamily (Шулявська)<br>Шулявська</div>`)[0];
+            popup_4386aa7de0605458c84e3d1ea3f19697.setContent(html_52113195a3c06c1fc9ea71c2dbaee53f);
+        
+
+        marker_48d0b918570677cb6479faa91e6f2e0a.bindPopup(popup_4386aa7de0605458c84e3d1ea3f19697)
+        ;
+
+        
+    
+    
+            marker_48d0b918570677cb6479faa91e6f2e0a.bindTooltip(
+                `<div>
+                     LagoFamily (Шулявська)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56557404f2e5414a7715e461e4dee454 = L.marker(
+                [50.51, 30.5922],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_81fe09c1a243fc33925f18a448264b4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_56557404f2e5414a7715e461e4dee454.setIcon(icon_81fe09c1a243fc33925f18a448264b4d);
+        
+    
+        var popup_31de6fed94dbdb712be3b88d63be923b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d369d7815703a8b0729830d3f452201 = $(`<div id="html_2d369d7815703a8b0729830d3f452201" style="width: 100.0%; height: 100.0%;">LagoFamily (Троєщина)<br>просп. Червоної Калини 43/2</div>`)[0];
+            popup_31de6fed94dbdb712be3b88d63be923b.setContent(html_2d369d7815703a8b0729830d3f452201);
+        
+
+        marker_56557404f2e5414a7715e461e4dee454.bindPopup(popup_31de6fed94dbdb712be3b88d63be923b)
+        ;
+
+        
+    
+    
+            marker_56557404f2e5414a7715e461e4dee454.bindTooltip(
+                `<div>
+                     LagoFamily (Троєщина)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9392402cbe7ada49816b19ad1daa2f88 = L.marker(
+                [50.4339, 30.5167],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_2b121340e201f7cac8bd2f0dbd7d3d78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9392402cbe7ada49816b19ad1daa2f88.setIcon(icon_2b121340e201f7cac8bd2f0dbd7d3d78);
+        
+    
+        var popup_168ee9673018d7d2ea9061f702c211a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e55de6e03f5cb32703d0eec6c5873e3e = $(`<div id="html_e55de6e03f5cb32703d0eec6c5873e3e" style="width: 100.0%; height: 100.0%;">Ola Dance Studio<br>Ділова 22Б, Олімпійська</div>`)[0];
+            popup_168ee9673018d7d2ea9061f702c211a4.setContent(html_e55de6e03f5cb32703d0eec6c5873e3e);
+        
+
+        marker_9392402cbe7ada49816b19ad1daa2f88.bindPopup(popup_168ee9673018d7d2ea9061f702c211a4)
+        ;
+
+        
+    
+    
+            marker_9392402cbe7ada49816b19ad1daa2f88.bindTooltip(
+                `<div>
+                     Ola Dance Studio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63bfc7d28555692f507bf153fcc45402 = L.marker(
+                [50.45, 30.5233],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_8e5556c18ff10dad39b441b04825d40f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_63bfc7d28555692f507bf153fcc45402.setIcon(icon_8e5556c18ff10dad39b441b04825d40f);
+        
+    
+        var popup_73d49ee95bf32c4d28ff76da778867f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92ed32f6b930a78538c542b472197f1d = $(`<div id="html_92ed32f6b930a78538c542b472197f1d" style="width: 100.0%; height: 100.0%;">Tango de Fuego<br>Центр Києва</div>`)[0];
+            popup_73d49ee95bf32c4d28ff76da778867f2.setContent(html_92ed32f6b930a78538c542b472197f1d);
+        
+
+        marker_63bfc7d28555692f507bf153fcc45402.bindPopup(popup_73d49ee95bf32c4d28ff76da778867f2)
+        ;
+
+        
+    
+    
+            marker_63bfc7d28555692f507bf153fcc45402.bindTooltip(
+                `<div>
+                     Tango de Fuego
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3e7017476623f69c3129f86fe742d97 = L.marker(
+                [50.454, 30.516],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_f2570356ef925f535cc82fdfb79ad756 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d3e7017476623f69c3129f86fe742d97.setIcon(icon_f2570356ef925f535cc82fdfb79ad756);
+        
+    
+        var popup_174282995b0927c74fa507a5aef7d219 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f43977181c638e68eaacdb5aee7b152c = $(`<div id="html_f43977181c638e68eaacdb5aee7b152c" style="width: 100.0%; height: 100.0%;">Kyiv Latino Kings<br>Buena Vista, Велика Житомирська 8/14</div>`)[0];
+            popup_174282995b0927c74fa507a5aef7d219.setContent(html_f43977181c638e68eaacdb5aee7b152c);
+        
+
+        marker_d3e7017476623f69c3129f86fe742d97.bindPopup(popup_174282995b0927c74fa507a5aef7d219)
+        ;
+
+        
+    
+    
+            marker_d3e7017476623f69c3129f86fe742d97.bindTooltip(
+                `<div>
+                     Kyiv Latino Kings
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8c2dbd38fdd835a89000fd8d02441e7 = L.marker(
+                [50.45, 30.5233],
+                {}
+            ).addTo(map_be0720d7135242a7441cd6cbd7e1b8d3);
+        
+    
+            var icon_8a880429abee0561108f1efe87135c1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e8c2dbd38fdd835a89000fd8d02441e7.setIcon(icon_8a880429abee0561108f1efe87135c1c);
+        
+    
+        var popup_7c0a9932d1f2c3bceb1d1d69575448b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14c12d951a3d7b48d7099ba69b1eb368 = $(`<div id="html_14c12d951a3d7b48d7099ba69b1eb368" style="width: 100.0%; height: 100.0%;">Студія Олександра Павлова<br>Київ (різні локації)</div>`)[0];
+            popup_7c0a9932d1f2c3bceb1d1d69575448b0.setContent(html_14c12d951a3d7b48d7099ba69b1eb368);
+        
+
+        marker_e8c2dbd38fdd835a89000fd8d02441e7.bindPopup(popup_7c0a9932d1f2c3bceb1d1d69575448b0)
+        ;
+
+        
+    
+    
+            marker_e8c2dbd38fdd835a89000fd8d02441e7.bindTooltip(
+                `<div>
+                     Студія Олександра Павлова
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
