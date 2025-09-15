@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Мапа студій</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map { height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([50.45, 30.52], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const studios = [
+      { name: "Rock Dance (Хрещатик)", coords: [50.4471, 30.5222], desc: "Хрещатик 32А" },
+      { name: "Rock Dance (Оболонь)", coords: [50.511, 30.498], desc: "В. Івасюка 10А" },
+      { name: "Rock Dance (Позняки)", coords: [50.397, 30.636], desc: "М. Гришка 6А" },
+      { name: "Casaderitmo (Олімпійська)", coords: [50.437, 30.516], desc: "м. Олімпійська" },
+      { name: "Casaderitmo (Позняки)", coords: [50.397, 30.63], desc: "м. Позняки" },
+      { name: "CubanoBoom", coords: [50.459, 30.615], desc: "Шимановського 2/1" },
+      { name: "Kyiv Latino Kings", coords: [50.456, 30.517], desc: "Buena Vista Social Bar" },
+      { name: "Ola Dance Studio", coords: [50.433, 30.518], desc: "Ділова 22Б" },
+      { name: "Bachata Fusion (Ravado)", coords: [50.423, 30.548], desc: "м. Печерська" },
+      { name: "LagoFamily", coords: [50.444, 30.517], desc: "Терещенківська 13" },
+      { name: "Студія Депо", coords: [50.393, 30.486], desc: "Васильківська 23А" }
+    ];
+
+    studios.forEach(s => {
+      L.marker(s.coords).addTo(map).bindPopup(`<b>${s.name}</b><br>${s.desc}`);
+    });
+  </script>
+</body>
+</html>
