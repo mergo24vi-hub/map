@@ -17,22 +17,51 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
+    // Кастомні іконки з ілюстраціями
+    const icons = {
+      salsa: L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/777/777242.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+      }),
+      bachata: L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/777/777214.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+      }),
+      swing: L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/777/777209.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+      }),
+      default: L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/854/854878.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+      })
+    };
+
     const studios = [
-      { name: "Rock Dance (Хрещатик)", coords: [50.4471, 30.5222], desc: "Хрещатик 32А" },
-      { name: "Rock Dance (Оболонь)", coords: [50.511, 30.498], desc: "В. Івасюка 10А" },
-      { name: "Rock Dance (Позняки)", coords: [50.397, 30.636], desc: "М. Гришка 6А" },
-      { name: "Casaderitmo (Олімпійська)", coords: [50.437, 30.516], desc: "м. Олімпійська" },
-      { name: "Casaderitmo (Позняки)", coords: [50.397, 30.63], desc: "м. Позняки" },
-      { name: "CubanoBoom", coords: [50.459, 30.615], desc: "Шимановського 2/1" },
-      { name: "Kyiv Latino Kings", coords: [50.456, 30.517], desc: "Buena Vista Social Bar" },
-      { name: "Ola Dance Studio", coords: [50.433, 30.518], desc: "Ділова 22Б" },
-      { name: "Bachata Fusion (Ravado)", coords: [50.423, 30.548], desc: "м. Печерська" },
-      { name: "LagoFamily", coords: [50.444, 30.517], desc: "Терещенківська 13" },
-      { name: "Студія Депо", coords: [50.393, 30.486], desc: "Васильківська 23А" }
+      { name: "Rock Dance (Хрещатик)", coords: [50.4471, 30.5222], desc: "Хрещатик 32А", type: 'swing' },
+      { name: "Rock Dance (Оболонь)", coords: [50.511, 30.498], desc: "В. Івасюка 10А", type: 'swing' },
+      { name: "Rock Dance (Позняки)", coords: [50.397, 30.636], desc: "М. Гришка 6А", type: 'swing' },
+      { name: "Casaderitmo (Олімпійська)", coords: [50.437, 30.516], desc: "м. Олімпійська", type: 'bachata' },
+      { name: "Casaderitmo (Позняки)", coords: [50.397, 30.63], desc: "м. Позняки", type: 'bachata' },
+      { name: "CubanoBoom", coords: [50.459, 30.615], desc: "Шимановського 2/1", type: 'salsa' },
+      { name: "Kyiv Latino Kings", coords: [50.456, 30.517], desc: "Buena Vista Social Bar", type: 'bachata' },
+      { name: "Ola Dance Studio", coords: [50.433, 30.518], desc: "Ділова 22Б", type: 'bachata' },
+      { name: "Bachata Fusion (Ravado)", coords: [50.423, 30.548], desc: "м. Печерська", type: 'bachata' },
+      { name: "LagoFamily", coords: [50.444, 30.517], desc: "Терещенківська 13", type: 'salsa' },
+      { name: "Студія Депо", coords: [50.393, 30.486], desc: "Васильківська 23А", type: 'salsa' }
     ];
 
     studios.forEach(s => {
-      L.marker(s.coords).addTo(map).bindPopup(`<b>${s.name}</b><br>${s.desc}`);
+      const icon = icons[s.type] || icons.default;
+      L.marker(s.coords, { icon }).addTo(map).bindPopup(`<b>${s.name}</b><br>${s.desc}`);
     });
   </script>
 </body>
